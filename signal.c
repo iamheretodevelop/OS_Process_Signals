@@ -14,12 +14,12 @@ void handler(int signum)
 
 int main(int argc, char * argv[])
 {
-  signal(SIGALRM,handler); //register handler to handle SIGALRM
-  //jump to handler() function once a SIGALRM is sounded
+  signal(SIGALRM,handler); //jump to handler() function 
+  //once a SIGALRM is sounded
   alarm(1); //Schedule a SIGALRM for 1 second
   //after the alarm is set, the program runs in an infinite loop
-  //once the alarm sounds, we move to the handler and it is runs
-  while(1); //busy wait for signal to be delivered
-  //while(1) acts as an infinite loop until a break
+  //once the alarm sounds, we move to the handler and it is run
+  while(1); //b
+  //acts as an infinite loop until a break
   return 0; //never reached
 }
